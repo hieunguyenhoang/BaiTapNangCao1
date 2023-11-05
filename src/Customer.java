@@ -1,3 +1,4 @@
+import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.HashMap;
 public class Customer {
@@ -42,5 +43,22 @@ public class Customer {
     public void xemGioHang() {
         System.out.println("Giỏ hàng hiện tại: " + themSanPham);
         System.out.println("Số lượng sản phầm: " + themSanPham.size());
+    }
+
+    public void datHang() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Ấn nút 1 để đặt hàng <3");
+        int a = sc.nextInt();
+        if(a == 1) {
+            System.out.println("Tên: " + this.getTenKhach());
+            System.out.println("Địa chỉ: " + this.getDiaChi());
+            System.out.println("SĐT: " + this.getSoDienThoai());
+            this.xemGioHang();
+            this.themSanPham.clear();
+        }
+        else {
+            System.out.println("Khách không đặt hàng -.-");
+            this.themSanPham.clear();
+        }
     }
 }

@@ -7,4 +7,8 @@ public class Cart {
     public Cart() {
         this.gioHangCuaKhach = new HashMap<>();
     }
+
+    public void tongGiaTriGioHang() {
+
+    }
 }

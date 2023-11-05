@@ -11,12 +11,18 @@ public class Main {
         Product product9 = new Product("Tay Bon Cau", 49, "Vim", 230);
         Product product10 = new Product("Giay thom", 23, "FPit", 50);
 
-        Customer khach1 = new Customer("Nguyen Hoang Hieu", "Go Vap", "0123456789");
 
-        khach1.themSanPhamVaoGioHang(product1);
+
+        Customer khach1 = new Customer("Nguyễn Hoàng Hiếu", "Gò Vấp", "0123456789");
+
         khach1.themSanPhamVaoGioHang(product1);
         khach1.themSanPhamVaoGioHang(product2);
 
-        khach1.xemGioHang();
+        khach1.datHang();
+
+        khach1.themSanPhamVaoGioHang(product8);
+        khach1.themSanPhamVaoGioHang(product9);
+
+        khach1.datHang();
     }
 }
